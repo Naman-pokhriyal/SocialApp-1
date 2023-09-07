@@ -1,0 +1,37 @@
+// components/NewPostForm.scss
+
+.newPost {
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #fff; /* White text color for label */
+    }
+
+    /* Use a textarea element instead of input for a larger input area */
+    textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      resize: vertical; /* Allow vertical resizing */
+      min-height: 60px; /* Set a minimum height for the textarea */
+    }
+
+    /* Adjust the styles for the button */
+    button {
+      padding: 8px 16px;
+      transition: background-color 0.3s ease-in-out;
+      align-self: flex-end; /* Position the button at the bottom right */
+    }
+  }
+}

@@ -1,0 +1,63 @@
+// user-profile-dark.scss
+
+.user-profile {
+  padding: 20px;
+  border-radius: 5px;
+
+  h2 {
+    font-size: 24px;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+  }
+
+  button {
+    border: 2px solid #222; /* Red logout button */
+    &:hover {
+      border: 2px solid #ff5733; /* Red logout button */
+    }
+  }
+
+  .user-data {
+    p {
+      font-size: 16px;
+      color: #fff; /* White text color */
+      margin-bottom: 12px;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .posts-data {
+      margin-top: 20px;
+
+      .post {
+        background-color: #222; /* Darker gray background for posts */
+        border: 1px solid #555; /* Darker border */
+        border-radius: 5px;
+        padding: 16px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .post-name {
+          font-weight: bold;
+          font-size: 18px;
+          color: #fff; /* White text color */
+          margin-bottom: 8px;
+        }
+
+        .postContent {
+          font-size: 16px;
+          color: #ccc; /* Light gray text color */
+          margin-bottom: 12px;
+        }
+
+        .postTime {
+          font-size: 14px;
+          color: #999; /* Slightly lighter gray text color */
+        }
+      }
+    }
+  }
+}

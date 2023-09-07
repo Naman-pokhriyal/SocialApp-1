@@ -1,0 +1,60 @@
+// Post.scss
+
+.postWrap {
+  // background-color: #555; /* Darker gray background for posts */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  //
+  display: flex;
+  flex-direction: row;
+
+  .post-header-content {
+    flex: 1;
+    padding: 10px;
+
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      flex: 1;
+
+      .post-username {
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        display: flex;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .post-dp {
+        width: 30px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .post-time {
+        font-size: 14px;
+        color: #999; /* Slightly lighter gray text color */
+      }
+    }
+
+    .post-content {
+      font-size: 16px;
+      color: #ccc; /* Light gray text color */
+      margin-bottom: 12px;
+    }
+    .deleteButton {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

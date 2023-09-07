@@ -1,0 +1,10 @@
+#Wrapper {
+  display: flex;
+  height: 100vh;
+}
+main {
+  flex: 1;
+  margin-left: 20px;
+  overflow-y: scroll;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

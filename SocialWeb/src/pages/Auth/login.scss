@@ -1,0 +1,59 @@
+// login-page.scss
+
+.login-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+  font-family: Arial, sans-serif;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      background-color: #007bff; /* Submit button color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3; /* Hover color */
+      }
+    }
+  }
+
+  button {
+    margin-top: 16px;
+
+    a {
+      text-decoration: none;
+      color: #007bff; /* Link color */
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

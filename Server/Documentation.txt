@@ -1,0 +1,23 @@
+Middleware: Authentication and Secure the incoming request
+Services: Resposible for the logic and Routing
+Controller: Resposible for all the interactions with the Database
+Util: Holds All the helper/support configuration.
+
+                                        +---------------+
+                                        |    Router     |
+                                        +---------------+
+                                                |
+                                                v
+    +---------------+      +---------------+    |   +---------------+
+    |   Middleware  |<-----|    Services   |<---+---|   Utilities   |
+    +---------------+      +---------------+        +---------------+
+        |                       |
+        v                       v
+    +---------------+      +---------------+
+    |  Controller   |<-----|    Models     |
+    +---------------+      +---------------+
+        |
+        v
+    +---------------+
+    |    Database   |
+    +---------------+
